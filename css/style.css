@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    height: 10vh;
+    width: 100%;
+    background: #030b1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+nav{
+    display: flex;
+    margin-right: 1rem;
+    
+}
+nav li{
+    list-style-type:none;
+    margin: 0 1rem 0 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color:#84848a;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    
+}
+.humburger{
+    height: 5vh;
+    width: 3rem;
+    display: none;
+    margin: 0 1rem 0 0;
+    z-index: 1000;
+    
+    
+}
+.oneline{
+    height: 0.4vh;
+    width: 2rem;
+    background-color: #fff;
+    margin: 0.4rem 0;
+    border-radius: 10rem;
+    
+    
+}
+.oneline:nth-child(2){
+    width: 1rem;
+    
+}
+
+@media only screen and (max-width:720px){
+    header  nav{
+        position: absolute;
+        top: -300px;
+        left: 0%;
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-color: #030b1b;
+        
+       
+    }
+    header .humburger{
+        display: block;
+    }
+   header  .active{
+       top: 77px;
+   }
+
+}
+.main-section{
+    height: 100vh;
+    width: 100%;
+    background: #020713;
+    
+    
+    
+}
+.cat-secition{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;   
+}
+.first-name{
+ padding: 1rem;
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ 
+ 
+ 
+
+}
+.second-name{
+    width: 50%;
+}
+.quotes-of-cat{
+    color: #393f45;
+   
+}
+.main-cat-images{
+    margin-top: 2rem;
+    height: 80vh;
+    width: 100%;
+    
+    
+}
+.me{
+    color: #84848a;
+    font-size: 4.5rem;      
+}
+
+.logo{
+    color: #84848a;
+    font-size: 3rem;
+    margin-left: 1rem;
+    
+}
+.contact-us-Button{
+    margin: 2rem 0;
+    padding: 15px 25px;
+    text-transform: capitalize ;
+    font-family: "DM Sans",sans-serif;
+    background: #ee550e;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #020713;
+    font-size: 18px ;
+    font-weight: 500 !;
+    border-radius: 30px;
+    transition: 0.2s all ease-in-out;
+}
+.contact-us-Button:hover{
+    background-color: transparent;
+    color: #84848a;
+    border: 0.1rem solid #ee550e;
+}
+.quotes-abt-cat{
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 1rem 0;
+    
+}
+
+
+
+@media only screen and (max-width:850px){
+    .main-section{
+      height: auto;  
+     
+    }
+  
+    .main-section .me{
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width:650px){
+    .main-section .cat-secition{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .first-name{
+        width: 100%;
+    }
+    .second-name{
+        width: 100%;
+    } 
+    .main-section  .main-cat-images{
+        height: 100%;
+    }  
+}
+@media only screen and (max-width:480px){
+  .main-section  .main-cat-images{
+        
+    }
+}
+
+
+
+.award-section{
+    height: 50vh;
+    width: 100%;
+    background-color: #020713;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #84848a;
+    flex-wrap: wrap;
+}
+.first-award{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    width: 120px;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+.first-award .fa-solid{
+    font-size: 3rem;
+    color: #ee550e;
+}
+
+@media only screen and (max-width:520px){
+.award-section{
+    height: auto;
+    padding: 1rem 0 1rem 0;
+}
+.award-section .first-award{  
+    width: 50%;
+    margin: 1rem 0;
+}
+
+}
+
+/*about section*/
+.about-section{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #020713;
+}
+.about-cat{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+   
+}
+.about-cat img{
+    height: 70vh;
+    border-radius: 20%;
+    background-color: #ee550e;
+    border-top-right-radius: 40%;
+    border-top-left-radius:40% ;
+    
+}
+.article-of-about-us .About-us{
+    width:5rem;
+    height: 0.4vh;
+    background-color: #ee550e;
+    display: flex;
+}
+.article-of-about-us h1{
+   color: #84848a;
+   font-size: 3rem;
+    
+}
+.article-of-about-us article{
+    color: #393f45;
+    margin: 2rem 0 0 0;
+    text-align: start;
+    max-width: 80%;
+    line-height: 1.5rem;
+}
+.line-for-about-us{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.line-for-about-us h1{
+    margin:  0 0 0 2rem;
+}
+.article-of-about-us{
+    width: 50%;   
+}
+
+@media only screen and (max-width:800px){
+    .about-section .article-of-about-us h1{
+        font-size: 2.4rem;
+    }
+}
+@media only screen and (max-width:720px){
+    .about-section {
+        height: auto;
+        flex-direction: column;
+    }
+    .about-section .article-of-about-us{
+        width: 100%;
+        margin: 1rem 0;
+        padding-left: 1.5rem;
+    }
+    .about-section .about-cat img{
+        border-radius: 0%;
+        height: 50vh;
+        border-top-right-radius: 40%;
+        border-top-left-radius:40% ;
+    }
+}
+
+/*services section*/
+.services-section{
+    height: 100vh;
+    width: 100%;
+    background-color: #020713;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    
+}
+.service-h1  {
+    color: #84848a;
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: start;
+    padding: 1rem;
+    text-transform: uppercase;
+    
+    
+}
+.line{
+    margin: 0 0 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.line h1{
+    color: #84848a;
+    margin: 0 0 0 1rem;
+}
+.line .what-we-do{
+    margin: 0 0 0 2rem;
+    display: flex;
+    width: 10rem;
+    height: 0.3vh;
+    background-color: #ee550e;
+    
+}
+.paragraph-of-services{
+    color: #84848a;
+    margin:0 0 1rem 1rem;
+}
+.services-list{
+    color: #393f45;
+    list-style-type:disc;
+    line-height: 1.5rem;
+    margin: 0 0 0 1rem;
+}
+.main-box{
+    width: 50%;
+}
+.main-images{
+    border-bottom: 2px solid #ee550e;
+    border-right: 2px solid #ee550e;
+    border-left: 2px solid #ee550e;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.main-images img{
+    width: 25rem;
+    height: 50vh;
+    border-radius: 10px;  
+}
+@media only screen and (max-width:780px){
+    .services-section{
+        height: auto;
+        padding: 2rem 0 1rem 0;
+        flex-direction: column-reverse;
+    }
+    .services-section .main-box{
+        width: 90%;
+    }
+    .services-section .main-images img{
+        width: 100%;
+        height: 50vh;
+    }
+    .services-section .main-images{
+        width: auto;
+        margin: 0 1rem 0 1rem;
+    }
+}
+
+/* section for adoption*/
+.section-for-pet-adoption{
+    height: 100vh;
+    width: 100%;
+    background-color: #020713;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.find-your-pet{
+   
+    padding: 1rem;
+    height: auto;
+    width: 100%;
+}
+.inner-box{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    color: #84848a;
+}
+
+.finds-your-pets-span{
+    height: .4vh;
+    width: 100px;
+    display: flex;
+    background-color: #ee550e;
+    margin: 1rem 0 0.5rem 0;
+}
+.find-your-pet h6{
+    font-size: 1rem;
+    color: #393f45; 
+    margin-bottom: 1rem;
+    margin: 2rem 0;
+   
+   
+}
+.pets-list{
+    justify-content: space-between;
+    display: flex;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    height: auto;
+    
+    
+}
+.pets-list figcaption{
+    font-size: 1.5rem;
+    text-align: center;
+    color:#84848a;
+    
+}
+.one-pets{
+    border: 1px solid #393f45;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+
+}
+.btn-for-adoption{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #393f45;
+}
+.one-pets img{
+    width: 100%;
+    height: 33vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 74% 92%, 25% 92%, 0 100%);
+    border-radius: 1rem;  
+    transition: 1s all ease-in-out;
+    cursor: pointer;
+}
+.figure-name{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.adopt-btn{
+    padding: 0.3rem;
+    text-decoration: none;
+    color: #84848a;
+    text-align: center;
+    border-bottom: 1px solid #ee550e;
+    border-top: 1px solid #ee550e;
+    border-left: 1px solid #ee550e;
+    border-radius: 3px;
+
+}
+.one-pets img:hover{
+    transform: rotate(10deg);
+}
+
+@media only screen and (max-width:980px){
+.section-for-pet-adoption{
+    height: auto;
+    
+}
+.section-for-pet-adoption .pets-list{
+    justify-content: space-around;
+}
+.section-for-pet-adoption .pets-list .one-pets{
+    margin: 1rem 0;
+    
+}
+
+}
+@media only screen and (max-width:540px){
+    .section-for-pet-adoption .pets-list .one-pets img{
+        height: 50vh;
+        
+    }
+}
+/*contact us page section*/
+
+.section-for-contact{
+    min-height: 80vh;
+    max-width: 100%;
+    background-color: #020713;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-for-contact h1{
+    color: #84848a;
+    font-size: 2rem;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0.9rem;
+    
+}
+.name-email{
+    display: flex;
+    flex-direction: column;
+}
+.message-section{
+    display: flex;
+    flex-direction: column;
+}
+.name-email-input{
+    padding: 1rem;
+    width: 20rem;
+    margin: 1rem 0;
+    background-color: transparent;
+    border: 1px solid #84848a;
+    outline: none;
+    color: #ee550e;
+}
+textarea{
+    height: 25vh;
+    width: 320px;
+    margin: 1rem 0;
+    padding:0.5rem;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #84848a;
+    color: #84848a;
+   
+}
+.send-message{
+  
+  width: 50%;
+  background-color: #ee550e;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.8rem 0.8rem;
+  border-radius: 30px;
+}
+
+
+@media only screen and (max-width:830px){
+    .section-for-contact form{
+        width: 100%;
+    }
+   
+}
+@media only screen and (max-width:720px){
+    .section-for-contact form{
+        flex-direction: column;
+    }
+    .name-email-input , textarea{
+        width: 100%;
+    }
+    .section-for-contact{
+        height: auto;
+    }
+    
+}
+
+
+.help-section{
+    height: 80vh;
+    width: 100%;
+    background-color: #020713;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.donation h1{
+    color: #84848a;
+    font-size: 2.5rem;
+}
+.button-for-donation{
+    margin: 2rem 0;
+}
+.donation-button{
+    margin: 1.4rem 0.4rem 0 0.4rem ;
+    padding: 17px 31px;
+    text-transform: capitalize ;
+    font-family: "DM Sans",sans-serif;
+    background: #ee550e;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #020713;
+    font-size: 18px ;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    
+}
+.donation-button:nth-child(1){
+    background-color: transparent;
+    border: 1px solid #ee550e;
+    color: #84848a;
+}
+.donation-button:nth-child(1):hover{
+    background-color: #ee550e;
+    color: #030b1b;
+}
+.donation-button:nth-child(2):hover{
+    background-color: transparent;
+    border: 1px solid #ee550e;
+    color: #84848a;
+}
+
+@media only screen and (max-width:420px){
+    .help-section .donation{
+        padding: 1rem;
+        
+    }
+}
+
+@media only screen and (max-width:400px){
+   
+   .help-section .donation-button{
+    padding: 1rem;
+    width: auto;
+    font-size: 0.9rem;
+    }
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    background-color: #020713;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.1rem;
+    align-content: center;
+    align-items: stretch;
+    padding: 1rem;
+}
+footer .first{
+    margin: 2rem 0 ;
+}
+footer .first h3{
+    color: #84848a;
+    margin: 0 0 1rem 0;
+}
+.footer-links{
+    list-style-type: none;
+    line-height: 1.5rem;
+    color: #393f45;
+}
+.footer-links a{
+    text-decoration: none;
+    color: #393f45;
+}
+.sub-news{
+    display: flex;
+    background-color: #fff;
+    padding: 0.4rem;
+    border-radius: 10rem;
+    
+}
+.give-email{
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.give-email:nth-child(2){
+    background-color: #ee550e;
+    cursor: pointer;
+    padding: 0.8rem 0.8rem;
+    border-radius: 30px;
+    
+    
+}
+.fa-brands{
+    color: #84848a;
+    font-size: 1.8rem;
+    margin: 2rem 0.2rem 0 0.2rem;
+    transition: 0.5s all ease-in-out;
+}
+.fa-brands:hover{
+    color: #ee550e;
+}
+@media only screen and (max-width:820px){
+    footer{
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .first {
+       max-width: auto;
+    }
+    .sub-news{
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width:570px){
+    footer{
+        height: auto;
+        grid-template-columns:  1fr;
+       
+        
+    }
+    
+    .sub-news {
+        width: auto;
+        justify-content: space-between;
+    }
+   
+}
+
+
+@media only screen and (max-width:360px){
+  
+    footer .sub-news  .give-email{
+        width: auto;
+       font-size: 0.7rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+}
